@@ -24,9 +24,8 @@ jobs:
       run: chmod +x gradlew
     - name: Build with Gradle
       run: ./gradlew build
-    - name: Run test
+    - name: Artifacts unit test report
       if: always()
-      run: |
-          ls
-          cd app/build/reports/tests/
-          ls -la
+      uses: actions/upload-pages-artifact@v1
+      with:
+      path: './app/build/reports/tests/testDebugUnitTest/index.html'
