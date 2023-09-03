@@ -2,6 +2,7 @@ name: Release workflow
 
 on:
   push:
+    tag: [ "*" ]
 
 
 jobs:
@@ -28,8 +29,8 @@ jobs:
       env:
         GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
       with:
-        tag_name: DUMMY_RELEASE_v1.0.2
-        release_name: Release DUMMY_RELEASE_v1.0.2
+        tag_name: ${{ github.ref }}
+        release_name: Release ${{ github.ref }}
         draft: false
         prerelease: false
 
