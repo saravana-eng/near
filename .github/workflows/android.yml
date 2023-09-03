@@ -26,6 +26,7 @@ jobs:
       run: ./gradlew build
     - name: Artifacts unit test report
       if: always()
-      uses: actions/upload-pages-artifact@v1
+      uses: pavi2410/html-preview-action@v2
       with:
-        path: './app/build/reports/tests/testDebugUnitTest'
+        html_file: './app/build/reports/tests/testDebugUnitTest/index.html'
+
