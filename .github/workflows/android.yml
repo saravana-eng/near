@@ -28,5 +28,5 @@ jobs:
       if: always()
       run: |
           ls
-          cd near/app/build/reports/tests/
+          cd app/build/reports/tests/
           ls -la
