@@ -1,2 +1,2 @@
 # near
-Near is an open source android app
+Near is an open source android app.
