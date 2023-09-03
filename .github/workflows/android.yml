@@ -28,4 +28,4 @@ jobs:
       if: always()
       uses: actions/upload-pages-artifact@v1
       with:
-      path: './app/build/reports/tests/testDebugUnitTest/index.html'
+        path: './app/build/reports/tests/testDebugUnitTest/index.html'
