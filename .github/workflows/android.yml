@@ -27,6 +27,6 @@ jobs:
     - name: Artifacts unit test report
       if: always()
       uses: actions/upload-artifact@v3
-        with:
-          name: test-results
-          path: ./app/build/reports/tests/testDebugUnitTest/index.html
+      with:
+        name: test-results
+        path: ./app/build/reports/tests/testDebugUnitTest/index.html
